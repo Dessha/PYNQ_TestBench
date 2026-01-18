@@ -274,8 +274,8 @@ end Process;
 ----------------------------------------------------------------
 -- Counters
 
-
-process(CLK, RST, FreqCOUNT, IFreqTime, ENFreqRUN) ------------- Frequency counter ------------- 
+------------- Step period counter ------------- 
+process(CLK, RST, FreqCOUNT, IFreqTime, ENFreqRUN) 
 begin 
    if rising_edge(CLK) then 
    -- add error for MaxedFreq surpassed??
