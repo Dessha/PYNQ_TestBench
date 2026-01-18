@@ -216,12 +216,11 @@ begin-- Difines DIRCON, ENFreqRUN, NStepGoal, StepGoal
                 end if;
             when RUNTest =>
                 SITstate <= b"100";--state blue
---                 if IForceIN >= MAXForce then  -- security func, add step limits?
---                    -- add if repeated x times -> forced New NStepGoal??
---                    DIRCON <= UPD;
---                    ENFreqRUN <= '1';
---                 els
-                 if (DIRCON = DOWND AND Rvar >= StepGoal) or (DIRCON = UPD AND Rvar <= StepGoal) then -- stuck here when done
+                 if IForceIN >= MAXForce then  -- security func, add step limits?
+                    -- add if repeated x times -> forced New NStepGoal??
+                    DIRCON <= UPD;
+                    ENFreqRUN <= '1';
+                 elsif (DIRCON = DOWND AND Rvar >= StepGoal) or (DIRCON = UPD AND Rvar <= StepGoal) then -- stuck here when done
                     ENFreqRUN <= '0';
                     if StepGoal /= IPosNext or StepFS /= StepType then -- wait/endQ-sig? 
                         if StepType = '1' then 
