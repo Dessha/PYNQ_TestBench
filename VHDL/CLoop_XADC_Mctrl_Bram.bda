@@ -175,18 +175,54 @@
         ],
         "vertices": {
             "V0": {
-                "VM": "AXI_BASE_BLOCK",
+                "VM": "CLoop_XADC_Mctrl_Bram",
                 "VT": "BC"
             },
             "V1": {
                 "VH": "2",
-                "VM": "AXI_BASE_BLOCK",
+                "VM": "CLoop_XADC_Mctrl_Bram",
                 "VT": "VR"
             },
             "V2": {
                 "VH": "2",
                 "VT": "PM",
                 "TU": "active"
+            },
+            "V3": {
+                "VT": "AC",
+                "BA": "0x40000000",
+                "HA": "0x40001FFF",
+                "BP": "C_S_AXI_BASEADDR",
+                "HP": "C_S_AXI_HIGHADDR",
+                "MA": "Data",
+                "MX": "/processing_system7_0",
+                "MI": "M_AXI_GP0",
+                "MS": "SEG_axi_bram_ctrl_0_Mem0",
+                "MV": "xilinx.com:ip:processing_system7:5.5",
+                "SX": "/axi_bram_ctrl_0",
+                "SI": "S_AXI",
+                "SS": "Mem0",
+                "SV": "xilinx.com:ip:axi_bram_ctrl:4.1",
+                "TM": "both",
+                "TU": "memory"
+            },
+            "V4": {
+                "VT": "AC",
+                "BA": "0x43C00000",
+                "HA": "0x43C0FFFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "Data",
+                "MX": "/processing_system7_0",
+                "MI": "M_AXI_GP0",
+                "MS": "SEG_xadc_wiz_0_Reg",
+                "MV": "xilinx.com:ip:processing_system7:5.5",
+                "SX": "/xadc_wiz_0",
+                "SI": "s_axi_lite",
+                "SS": "Reg",
+                "SV": "xilinx.com:ip:xadc_wiz:3.3",
+                "TM": "both",
+                "TU": "register"
             }
         },
         "edges": [
@@ -197,6 +233,16 @@
             {
                 "src": "V1",
                 "trg": "V2"
+            },
+            {
+                "src": "V3",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V4",
+                "trg": "V2",
+                "EH": "2"
             }
         ]
     }
