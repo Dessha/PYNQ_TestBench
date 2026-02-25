@@ -1,0 +1,99 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.920996",
+   "Default View_TopLeft":"-378,-128",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 2080 -y -80 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 2080 -y -50 -defaultsOSRD
+preplace port port-id_vauxn12 -pg 1 -lvl 0 -x -130 -y 1020 -defaultsOSRD
+preplace port port-id_vauxn13 -pg 1 -lvl 0 -x -130 -y 1080 -defaultsOSRD
+preplace port port-id_vauxn5 -pg 1 -lvl 0 -x -130 -y 840 -defaultsOSRD
+preplace port port-id_vauxp12 -pg 1 -lvl 0 -x -130 -y 1050 -defaultsOSRD
+preplace port port-id_vauxp13 -pg 1 -lvl 0 -x -130 -y 1110 -defaultsOSRD
+preplace port port-id_vauxp5 -pg 1 -lvl 0 -x -130 -y 870 -defaultsOSRD
+preplace port port-id_vauxn0 -pg 1 -lvl 0 -x -130 -y 780 -defaultsOSRD
+preplace port port-id_vauxn15 -pg 1 -lvl 0 -x -130 -y 1140 -defaultsOSRD
+preplace port port-id_vauxn6 -pg 1 -lvl 0 -x -130 -y 900 -defaultsOSRD
+preplace port port-id_vauxn8 -pg 1 -lvl 0 -x -130 -y 960 -defaultsOSRD
+preplace port port-id_vauxp0 -pg 1 -lvl 0 -x -130 -y 810 -defaultsOSRD
+preplace port port-id_vauxp15 -pg 1 -lvl 0 -x -130 -y 1170 -defaultsOSRD
+preplace port port-id_vauxp6 -pg 1 -lvl 0 -x -130 -y 930 -defaultsOSRD
+preplace port port-id_vauxp8 -pg 1 -lvl 0 -x -130 -y 990 -defaultsOSRD
+preplace portBus Motor_DIR -pg 1 -lvl 6 -x 2080 -y 760 -defaultsOSRD
+preplace portBus Motor_PULZ -pg 1 -lvl 6 -x 2080 -y 730 -defaultsOSRD
+preplace portBus btn -pg 1 -lvl 0 -x -130 -y -110 -defaultsOSRD
+preplace portBus led -pg 1 -lvl 6 -x 2080 -y -110 -defaultsOSRD
+preplace portBus ledRGB4 -pg 1 -lvl 6 -x 2080 -y 700 -defaultsOSRD
+preplace inst Bram_MemCon_0 -pg 1 -lvl 3 -x 1010 -y 540 -defaultsOSRD
+preplace inst Bram_Motorstates_Ctrl_0 -pg 1 -lvl 5 -x 1870 -y 770 -defaultsOSRD
+preplace inst axi_bram_ctrl -pg 1 -lvl 4 -x 1480 -y 560 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 3 -x 1010 -y 310 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 2 -x 580 -y 510 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 210 -y 130 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 210 -y 370 -defaultsOSRD
+preplace inst xlslice_CLsensor -pg 1 -lvl 3 -x 1010 -y 190 -defaultsOSRD
+preplace inst xlslice_DIRref -pg 1 -lvl 3 -x 1010 -y 90 -defaultsOSRD
+preplace inst xlslice_btn0 -pg 1 -lvl 4 -x 1480 -y 80 -defaultsOSRD
+preplace inst xlslice_btn1 -pg 1 -lvl 4 -x 1480 -y 180 -defaultsOSRD
+preplace inst xlslice_btn3 -pg 1 -lvl 4 -x 1480 -y 280 -defaultsOSRD
+preplace inst CLoop_AXI_MUX_0 -pg 1 -lvl 4 -x 1480 -y 1050 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 3 -x 1010 -y 970 -defaultsOSRD
+preplace netloc Bram_MemCon_0_Baddr 1 3 1 1310 530n
+preplace netloc Bram_MemCon_0_Ben 1 3 1 1180 540n
+preplace netloc Bram_MemCon_0_Bwe 1 3 1 1160 580n
+preplace netloc Bram_MemCon_0_Bwrite 1 3 1 1300 560n
+preplace netloc Bram_MemCon_0_MC0 1 3 2 1270J 410 1660
+preplace netloc Bram_MemCon_0_MC1 1 3 2 1300 430 1650J
+preplace netloc Bram_MemCon_0_MC_valid 1 3 2 1280J 420 1690
+preplace netloc Bram_Motorstates_Ctrl_0_CLOOPino 1 2 4 840 0 NJ 0 NJ 0 2050
+preplace netloc Bram_Motorstates_Ctrl_0_DirOut 1 5 1 2060J 750n
+preplace netloc Bram_Motorstates_Ctrl_0_MS_valid 1 2 4 860 10 NJ 10 NJ 10 2030
+preplace netloc Bram_Motorstates_Ctrl_0_PULS 1 5 1 NJ 730
+preplace netloc Bram_Motorstates_Ctrl_0_StateColor 1 5 1 2060J 700n
+preplace netloc Bram_Motorstates_Ctrl_0_StepCURO 1 2 4 870 400 NJ 400 NJ 400 2040
+preplace netloc Bram_Motorstates_Ctrl_0_StepGOALO 1 2 4 850 390 NJ 390 NJ 390 2020
+preplace netloc CLoop_AXI_MUX_0_CLsensorOut 1 4 1 1720 820n
+preplace netloc CLoop_AXI_MUX_0_XADC_ready 1 3 2 N 930 1650
+preplace netloc axi_bram_ctrl_doutb 1 2 2 830 420 1150
+preplace netloc btn_1 1 0 6 NJ -110 NJ -110 NJ -110 1310 -110 NJ -110 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 20 0 420 310 820 410 1260 690 1680
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 10 -10 400
+preplace netloc processing_system7_0_GPIO_O 1 1 2 NJ 80 800
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 4 450 410 810 660 1250 700 NJ
+preplace netloc vauxn0_1 1 0 3 NJ 780 NJ 780 NJ
+preplace netloc vauxn12_1 1 0 3 NJ 1020 NJ 1020 NJ
+preplace netloc vauxn13_1 1 0 3 NJ 1080 NJ 1080 NJ
+preplace netloc vauxn15_1 1 0 3 NJ 1140 NJ 1140 NJ
+preplace netloc vauxn5_1 1 0 3 NJ 840 NJ 840 NJ
+preplace netloc vauxn6_1 1 0 3 NJ 900 NJ 900 NJ
+preplace netloc vauxn8_1 1 0 3 NJ 960 NJ 960 NJ
+preplace netloc vauxp0_1 1 0 3 -100J 800 NJ 800 NJ
+preplace netloc vauxp12_1 1 0 3 -100J 1040 NJ 1040 NJ
+preplace netloc vauxp13_1 1 0 3 -100J 1100 NJ 1100 NJ
+preplace netloc vauxp15_1 1 0 3 -100J 1160 NJ 1160 NJ
+preplace netloc vauxp5_1 1 0 3 -100J 860 NJ 860 NJ
+preplace netloc vauxp6_1 1 0 3 -100J 920 NJ 920 NJ
+preplace netloc vauxp8_1 1 0 3 -100J 980 NJ 980 NJ
+preplace netloc xadc_wiz_0_m_axis_tdata 1 3 1 1170 890n
+preplace netloc xadc_wiz_0_m_axis_tid 1 3 1 1160 910n
+preplace netloc xadc_wiz_0_m_axis_tvalid 1 3 1 1150 950n
+preplace netloc xlslice_0_Dout 1 3 2 1220 20 1720J
+preplace netloc xlslice_0_Dout1 1 3 1 1290J 190n
+preplace netloc xlslice_btn0_Dout 1 4 1 1710J 80n
+preplace netloc xlslice_btn1_Dout 1 4 1 1700J 180n
+preplace netloc xlslice_btn3_Dout 1 4 1 1670J 280n
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 1 1310 310n
+preplace netloc axi_smc_M00_AXI 1 2 1 710 290n
+preplace netloc axi_smc_M01_AXI 1 2 1 710 520n
+preplace netloc processing_system7_0_DDR 1 1 5 410J -80 NJ -80 NJ -80 NJ -80 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 5 430J -50 NJ -50 NJ -50 NJ -50 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 410 160n
+levelinfo -pg 1 -130 210 580 1010 1480 1870 2080
+pagesize -pg 1 -db -bbox -sgen -240 -130 2240 1420
+"
+}
+{
+   "da_clkrst_cnt":"1"
+}
